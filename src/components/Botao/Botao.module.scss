@@ -1,0 +1,32 @@
+.botao {
+  align-self: center;
+  background-color: #35374B;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px #4646489f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 16px;
+  width: 150px;
+  transition: .2s ease-in-out;
+
+  &:active {
+    background-color: #35374B;
+    box-shadow: 2px 2px 4px #0000009f inset;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .botao {
+    grid-column-start: span 2;
+    justify-self: center;
+    width: 200px;
+    font-size: 1rem;
+  }
+}
